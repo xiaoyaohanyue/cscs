@@ -1,0 +1,18 @@
+include ':chat'
+include ':client',
+    ':push',
+    ':uikit',
+    ':mars-core-release',
+    // 如果不能从网络下载webrtc时，请取消下面的注释
+    ':webrtc',
+    ':uvccamera',
+    ':emojilibrary',
+    ':imagepicker',
+//    ':momentclient',
+    ':pttclient',
+//    ':pttclient',
+    ':avenginekit'
+
+//project(':avenginekit').projectDir = new File('../android-av/avenginekit')
+//project(':momentclient').projectDir = new File('../android-momentclient/momentclient')
+//project(':pttclient').projectDir = new File('../android-pttclient/pttclient')

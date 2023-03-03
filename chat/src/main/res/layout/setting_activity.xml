@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray5"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <cn.wildfire.chat.kit.widget.OptionItemView
+            android:id="@+id/privacySettingOptionItemView"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:show_arrow_indicator="true"
+            app:title="隐私设置" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <cn.wildfire.chat.kit.widget.OptionItemView
+            android:id="@+id/aboutOptionItemView"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_option_item"
+            app:show_arrow_indicator="true"
+            app:title="关于" />
+
+        <cn.wildfire.chat.kit.widget.OptionItemView
+            android:id="@+id/diagnoseOptionItemView"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true"
+            app:show_arrow_indicator="true"
+            app:title="诊断" />
+
+        <cn.wildfire.chat.kit.widget.OptionItemView
+            android:id="@+id/uploadLogOptionItemView"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true"
+            app:show_arrow_indicator="true"
+            app:title="上传日志" />
+
+        <cn.wildfire.chat.kit.widget.OptionItemView
+            android:id="@+id/batteryOptionItemView"
+            style="@style/OptionItem"
+            android:background="@drawable/selector_common_item"
+            android:clickable="true"
+            app:show_arrow_indicator="true"
+            app:title="电池优化" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/option_item_margin_top"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View style="@style/Line" />
+
+        <TextView
+            android:id="@+id/exitOptionItemView"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_option_item"
+            android:gravity="center"
+            android:text="@string/exit"
+            android:textColor="@color/black1"
+            android:textSize="16sp" />
+
+        <View style="@style/Line" />
+    </LinearLayout>
+
+</LinearLayout>
