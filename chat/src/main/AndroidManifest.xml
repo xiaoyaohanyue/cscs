@@ -82,13 +82,13 @@
         <activity
             android:name="cn.wildfire.chat.app.main.MainActivity"
             android:exported="true"
-            android:label="野火IM"
+            android:label="穿云燕"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="${applicationId}.main" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-            <intent-filter android:label="分享到野火IM">
+            <intent-filter android:label="分享到穿云燕">
                 <action android:name="android.intent.action.SENDTO" />
                 <action android:name="android.intent.action.SEND" />
 

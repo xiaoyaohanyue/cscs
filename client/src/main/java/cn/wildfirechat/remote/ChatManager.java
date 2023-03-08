@@ -456,7 +456,7 @@ public class ChatManager {
     }
 
     /**
-     * 当有自己的用户账号体系，不想使用野火IM提供的用户信息托管服务时，调用此方法设置用户信息源
+     * 当有自己的用户账号体系，不想使用穿云燕提供的用户信息托管服务时，调用此方法设置用户信息源
      *
      * @param userSource 用户信息源
      */
@@ -1108,7 +1108,7 @@ public class ChatManager {
     }
 
     /**
-     * 获取clientId, 野火IM用clientId唯一表示用户设备
+     * 获取clientId, 穿云燕用clientId唯一表示用户设备
      */
     public synchronized String getClientId() {
         if (this.clientId != null) {

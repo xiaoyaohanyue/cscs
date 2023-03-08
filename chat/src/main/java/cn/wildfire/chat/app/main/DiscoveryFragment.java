@@ -90,7 +90,7 @@ public class DiscoveryFragment extends Fragment {
 
     @OnClick(R.id.cookbookOptionItemView)
     void cookbook() {
-        WfcWebViewActivity.loadUrl(getContext(), "野火IM开发文档", "https://docs.wildfirechat.cn");
+        WfcWebViewActivity.loadUrl(getContext(), "开发文档",/*  "https://docs.wildfirechat.cn"*/);
     }
 
 

@@ -46,7 +46,7 @@ public class SettingActivity extends WfcBaseActivity {
         switch (requestCode) {
             case REQUEST_IGNORE_BATTERY_CODE:
                 if (resultCode == RESULT_CANCELED) {
-                    Toast.makeText(this, "允许野火IM后台运行，更能保证消息的实时性", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "允许穿云燕后台运行，更能保证消息的实时性", Toast.LENGTH_SHORT).show();
                 }
                 break;
             default:
@@ -135,7 +135,7 @@ public class SettingActivity extends WfcBaseActivity {
                     intent.setData(Uri.parse("package:" + packageName));
                     startActivityForResult(intent, REQUEST_IGNORE_BATTERY_CODE);
                 }else {
-                    Toast.makeText(this, "已忽略电池优化，允许野火IM后台运行，更能保证消息的实时性", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "已忽略电池优化，允许穿云燕后台运行，更能保证消息的实时性", Toast.LENGTH_SHORT).show();
                 }
             } catch (Exception e) {
                 e.printStackTrace();
