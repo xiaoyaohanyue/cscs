@@ -349,13 +349,13 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
                         setTitleBackgroundResource(R.color.gray5, false);
                     }
                     break;
-                case R.id.workspace:
+                /*case R.id.workspace:
                     contentViewPager.setCurrentItem(2, false);
                     setTitle("工作台");
                     if (!isDarkTheme()) {
                         setTitleBackgroundResource(R.color.gray5, false);
                     }
-                    break;
+                    break;*/
                 case R.id.discovery:
                     contentViewPager.setCurrentItem(showWorkSpace ? 3 : 2, false);
                     setTitle("发现");
@@ -466,9 +466,9 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
             case 1:
                 bottomNavigationView.setSelectedItemId(R.id.contact);
                 break;
-            case 2:
+          /*  case 2:
                 bottomNavigationView.setSelectedItemId(R.id.workspace);
-                break;
+                break;*/
             case 3:
                 bottomNavigationView.setSelectedItemId(R.id.discovery);
                 break;
