@@ -139,7 +139,7 @@ public class MainActivity extends WfcBaseActivity implements ViewPager.OnPageCha
     protected void afterViews() {
         bottomNavigationView.setItemIconTintList(null);
         if (TextUtils.isEmpty(Config.WORKSPACE_URL)) {
-            bottomNavigationView.getMenu().removeItem(R.id.workspace);
+          //  bottomNavigationView.getMenu().removeItem(R.id.workspace);
         }
         IMServiceStatusViewModel imServiceStatusViewModel = ViewModelProviders.of(this).get(IMServiceStatusViewModel.class);
         imServiceStatusViewModel.imServiceStatusLiveData().observe(this, imStatusLiveDataObserver);
